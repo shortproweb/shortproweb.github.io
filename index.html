@@ -2,20 +2,36 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
     <title>ShortPro Web</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        /* 防止页面滚动 */
+        position: fixed;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        /* 解决 iOS Safari 中 iframe 滚动问题 */
+        -webkit-overflow-scrolling: touch;
+        /* 防止触摸时页面整体滚动 */
+        touch-action: pan-y;
+      }
+    </style>
   </head>
   <body>
-    <div id="content"></div>
-    <script>
-      fetch("https://bossconnelec.com")
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById("content").innerHTML = html;
-        })
-        .catch((err) => {
-          // document.getElementById("content").innerHTML = "无法加载内容";
-          console.error(err);
-        });
-    </script>
+    <iframe src="https://m.wstest.cyou"></iframe>
   </body>
 </html>
