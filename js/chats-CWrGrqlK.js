@@ -1,0 +1,1 @@
+import{c as s,d as e}from"./index-DtfMsozV.js";const a=s(e.bendunganCreate.url),r=s(e.bendunganList.url),n=s(e.messageCreate.url),t=s(e.messageList.url),u=s(e.roleList.url),i=s(e.sessionCreate.url),l=s(e.sessionList.url),o=s(e.sessionRemove.url);export{a as B,t as M,u as R,l as S,n as a,i as b,o as c,r as d};

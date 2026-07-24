@@ -1,0 +1,1 @@
+import{_ as s,r as a,a as o,o as r,b as e}from"./index-DtfMsozV.js";const t={class:"family-home"};const n=s({},[["render",function(s,n){const i=a("router-view");return r(),o("div",t,[e(i)])}]]);export{n as default};

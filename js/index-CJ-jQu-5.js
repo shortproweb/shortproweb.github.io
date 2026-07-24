@@ -1,0 +1,1 @@
+import{e as a,m as s,n as e,f as i,b as m,I as o,g as n,h as p}from"./index-DtfMsozV.js";const[t,g]=i("skeleton-image");const l=p(a({name:t,props:{imageSize:e,imageShape:s("square")},setup:a=>()=>m("div",{class:g([a.imageShape]),style:n(a.imageSize)},[m(o,{name:"photo",class:g("icon")},null)])}));export{l as S};
