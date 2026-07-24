@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ShortPro Web</title>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+      fetch("https://bossconnelec.com")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("content").innerHTML = html;
+        })
+        .catch((err) => {
+          // document.getElementById("content").innerHTML = "无法加载内容";
+          console.error(err);
+        });
+    </script>
+  </body>
+</html>
